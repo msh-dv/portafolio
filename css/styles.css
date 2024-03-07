@@ -2,21 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
+
+  /* CSS HEX */
+  --rich-black: #00111cff;
+  --rich-black-2: #001523ff;
+  --rich-black-3: #001a2cff;
+  --prussian-blue: #002137ff;
+  --prussian-blue-2: #00253eff;
+  --prussian-blue-3: #002945ff;
+  --prussian-blue-4: #002e4eff;
+  --prussian-blue-5: #003356ff;
+  --indigo-dye: #003a61ff;
+  --indigo-dye-2: #00406cff;
+
   /* palette 2 */
   --light-sky-blue: #97caedff;
   --argentinian-blue: #63b0e3ff;
-
-  --no-true-blue:#84a6f8ff;
-  --true-blue: #0466c8ff;
-  --sapphire: #0353a4ff;
-  --yale-blue: #023e7dff;
-  --oxford-blue: #002855ff;
-  --oxford-blue-2: #001845ff;
-  --oxford-blue-3: #001233ff;
-  --delft-blue: #33415cff;
-  --paynes-gray: #5c677dff;
-  --slate-gray: #7d8597ff;
-  --cool-gray: #979dacff;
 
   /* palette 3 */
   --seasalt: #f8f9faff;
@@ -28,6 +29,7 @@
   --outer-space: #495057ff;
   --onyx: #343a40ff;
   --eerie-black: #212529ff;
+
   --bordered:1px solid white;
 }
 
@@ -43,7 +45,11 @@ html {
 body {
   width: 100%;
   color:var(--seasalt);
-  background: linear-gradient(45deg,var(--oxford-blue-3), var(--oxford-blue));
+  background: linear-gradient(45deg,var(--rich-black), var(--prussian-blue));
+}
+
+body *::selection{
+  background-color: var(--indigo-dye-2);
 }
 
 h1,h2,h3 {
@@ -71,7 +77,7 @@ main {
   height:100vh;
   display: flex;
   flex-flow: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -89,17 +95,16 @@ main {
 }
 
 .sub-presentation-card p{
-  font-style: italic;
   font-size: 1.5rem;
 }
 
 .sub-presentation-card #name {
-  font-size: 3.8rem;
+  font-size: 4.3rem;
 }
 
 .sub-presentation-card #job {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 
@@ -114,7 +119,6 @@ main {
 
 .tech-gallery-container{
   display: flex;
-
   justify-content: center;
 }
 
@@ -122,7 +126,7 @@ main {
   padding: 1rem;
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(2,1fr);
   gap:1rem
 }
@@ -148,6 +152,7 @@ main {
 
 .links {
   width: 100%;
+  justify-self: end;
 }
 
 .links-container {
@@ -238,11 +243,11 @@ svg:hover{
 }
 
 .nav-button:hover {
-  background-color: var(--yale-blue);
+  background-color: var(--indigo-dye-2);
 }
 
 .nav-button:active {
-  background-color: var(--oxford-blue);
+  background-color: var(--prussian-blue);
 }
 
 @media (max-width:768px){
@@ -250,6 +255,13 @@ svg:hover{
     grid-template-columns: 1fr;
   }
 
+  .sub-presentation-card #name {
+    font-size: 3.5rem;
+  }
+
+  .sub-presentation-card #job {
+    font-size: 1.4rem;
+  }
   .main-info{
     position: static;
   }
