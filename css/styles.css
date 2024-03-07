@@ -43,7 +43,7 @@ html {
 body {
   width: 100%;
   color:var(--seasalt);
-  background: linear-gradient(50deg,var(--oxford-blue-3), var(--oxford-blue));
+  background: linear-gradient(45deg,var(--oxford-blue-3), var(--oxford-blue));
 }
 
 h1,h2,h3 {
@@ -230,15 +230,15 @@ svg:hover{
 
 .nav-button {
   padding: 0.4rem 1rem;
-  color:var(--light-sky-blue);
-  border: 2px solid var(--light-sky-blue);
+  color:var(--argentinian-blue);
+  border: 2px solid var(--argentinian-blue);
   border-radius: 1rem;
   text-decoration: none;
   font-weight: bold;
 }
 
 .nav-button:hover {
-  background-color: var(--true-blue);
+  background-color: var(--yale-blue);
 }
 
 .nav-button:active {
