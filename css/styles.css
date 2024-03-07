@@ -337,7 +337,7 @@ polyline, rect{
   gap:1rem;
 }
   
-@media only screen and (max-width: 467px) {
+@media screen and (max-width: 988px) {
 
   main{
     grid-template-columns: 1fr;
@@ -362,6 +362,7 @@ polyline, rect{
   .sub-presentation-card #job {
     font-size: 1.4rem;
   }
+
   .main-info{
     position: static;
   }
