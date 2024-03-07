@@ -338,7 +338,7 @@ polyline, rect{
 }
   
 
-@media (max-width:768px){
+@media (min-width:768px){
   main{
     grid-template-columns: 1fr;
   }
