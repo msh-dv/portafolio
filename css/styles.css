@@ -167,7 +167,7 @@ main {
 
 .links-sub-container {
   padding: 1rem;
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-flow:row wrap;
   justify-content: space-around;
