@@ -190,7 +190,7 @@ svg{
   fill:var(--argentinian-blue);
   width: calc(2rem + 1vw);
   height: calc(2rem + 1vw);
-  transition: transform 200ms ease-out;
+  transition: transform 150ms ease-out;
 }
 
 svg:hover{ 
@@ -255,6 +255,7 @@ polyline, rect{
 }
 
 .nav-button:hover {
+  transition-duration: 300ms;
   background-color: var(--indigo-dye-2);
 }
 
