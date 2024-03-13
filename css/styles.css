@@ -167,7 +167,7 @@ main {
 
 .links-sub-container {
   padding: 1rem;
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-flow:row wrap;
   justify-content: space-around;
@@ -264,10 +264,6 @@ polyline, rect{
   justify-content: center;
   width: 100%;
 }
-
-/* .proyects-content *{ */
-/*   border:1px solid var(--seasalt); */
-/* } */
 
 .proyects-content {
   width: 85%;
