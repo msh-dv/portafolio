@@ -337,7 +337,7 @@ polyline, rect{
   gap:1rem;
 }
   
-@media screen and (max-width: 988px) {
+@media screen and (max-width: 768px) {
 
   main{
     grid-template-columns: 1fr;
