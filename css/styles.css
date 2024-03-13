@@ -38,6 +38,7 @@
 }
 
 html { 
+  scroll-behavior:smooth;
   font-family: 'Open Sans';
   scrollbar-width: none;
 }
@@ -189,12 +190,14 @@ svg{
   fill:var(--argentinian-blue);
   width: calc(2rem + 1vw);
   height: calc(2rem + 1vw);
+  transition: transform 200ms ease-out;
 }
 
 svg:hover{ 
   fill:var(--seasalt);
   max-width: 100%;
   max-height: 100%;
+  transform: translateY(-3px);
 }
 
 polyline, rect{
