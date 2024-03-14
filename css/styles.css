@@ -112,6 +112,15 @@ main {
   font-size: 1.6rem;
 }
 
+.bottom-button {
+  display: none;
+  position: absolute;
+  bottom: 1rem;
+}
+
+#bottom-button {
+  width: 2rem;
+}
 
 .tech-stack {
   width: 100%;
@@ -220,7 +229,8 @@ polyline, rect{
 }
 
 .about {
-  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
   width: 100%;
   max-width: 100%;
   display: flex;
@@ -228,6 +238,9 @@ polyline, rect{
   justify-content: center;
   align-items: center;
   padding: 1rem;
+}
+.about p b{
+  color:var(--argentinian-blue);
 }
 
 .about-text {
@@ -249,14 +262,14 @@ polyline, rect{
   padding: 0.4rem 1rem;
   color:var(--argentinian-blue);
   border: 2px solid var(--argentinian-blue);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   font-weight: bold;
 }
 
 .nav-button:hover {
   transition-duration: 300ms;
-  background-color: var(--indigo-dye-2);
+  background-color: var(--prussian-blue-2);
 }
 
 .nav-button:active {
@@ -343,6 +356,10 @@ polyline, rect{
     grid-template-columns: 1fr;
   }
 
+  .about{
+    font-size: 1.2rem;
+  }
+
   .nav-container {
     width: 80%;
   }
@@ -361,6 +378,10 @@ polyline, rect{
 
   .sub-presentation-card #job {
     font-size: 1.4rem;
+  }
+
+  .bottom-button {
+    display:block;
   }
 
   .main-info{
